@@ -8,6 +8,7 @@ const router = express.Router()
 const chooseNews = 19
 
 router.get('/', async (req, res)=>{
+    console.log("im coming here")
     const filter = {}
     const allNews = await News.find(filter).sort({_id: -1})
 
