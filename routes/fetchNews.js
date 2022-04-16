@@ -34,7 +34,7 @@ router.get('/', async (req, res)=>{
         mal: mal,
         stories: stories
     }
-    res.json(allData)
+    res.status(200).json(allData)
 })
 
 module.exports = router
